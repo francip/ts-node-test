@@ -3,4 +3,3 @@ export function hello(who: string = "world"): string {
 }
 
 console.log(hello("ts-node"));
-console.log("Server started");
