@@ -1,10 +1,11 @@
 {
-    "name": "garga",
+    "name": "ts-node-test",
     "version": "1.0.0",
     "private": true,
     "type": "module",
     "scripts": {
-        "start": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' index.ts",
+        "start": "ts-node --esm index.ts",
+        "start:successt": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' index.ts",
         "build": "tsc"
     },
     "devDependencies": {
