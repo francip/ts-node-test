@@ -6,11 +6,15 @@
     "scripts": {
         "start": "ts-node --esm index.ts",
         "start:success": "node --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"ts-node/esm\", pathToFileURL(\"./\"));' index.ts",
+        "start:tsx": "tsx index.ts",
         "build": "tsc"
     },
     "devDependencies": {
-        "@types/node": "^20.11.20",
+        "@types/node": "^22.12.0",
         "ts-node": "^10.9.2",
-        "typescript": "^5.3.3"
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "tsx": "^4.19.2"
     }
 }
